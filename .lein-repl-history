@@ -1,0 +1,12 @@
+(require 'guestbook.repl)
+exit
+(require 'guestbook.repl)
+(guestbook.repl/start-server)
+(guestbook.repl/start-server 7777)
+(guestbook.repl/start-server "7777")
+exit
+(require 'guestbook.repl)
+(guestbook.repl/start-server "7777")
+(require 'guestbook.models.db)
+(guestbook.models.db/create-guestbook-table)
+exit
